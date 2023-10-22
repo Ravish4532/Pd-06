@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Landing Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel ="stylesheet" href="style.css" >
+  </head>
+  <body>
+   
+    <header id="header">
+      <div class="header-content">
+        <div class ="logo">
+          <h1>Pizza Delivery</h1>
+        </div>
+        <nav id="nav-bar">       
+          <a href="#home-sec" class="nav-link">HOME</a>
+         <a href="#about" class="nav-link">ABOUT US</a>
+        <a href="#menus" class="nav-link">MENU</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+      </div>
+    </header>
+
+    <main>
+     
+      <section id="home-sec" >
+        <div class="grab">
+          <h1>Pizza Delivery </h1>
+          <h2>Order now and enjoy your favourite pizzas and have it delivered to your doorstep.</h2>
+          <button class="btn">Order Now</button>
+        </div>
+        <div class="img">
+          <img src="img/man-scooter.jpg" />
+        </div>
+      </section>
+
+      <section id="about">
+        <h1 class="section-heading">ABOUT US</h1>
+        <div class="contents">
+          <p>
+            We are a pizza delivery service committed to providing high-quality 
+            pizzas that satisfy your cravings. Our pizzas are made with the finest 
+            ingredients, cooked to perfection, and delivered hot and fresh to your doorstep.
+            we take pride in our commitment to customer satisfaction. Our dedicated team works 
+            tirelessly to provide fast, reliable and friendly delivery system. 
+          </p>
+        </div>
+      </section>
+      
+      <section id="menus">
+        <h1 class="section-heading">MENU</h1>
+      
+        <div class="flexible">
+          
+          <div class="tile">
+            <img src="img/Mexican_Green_Wave.jpg" />
+            <h4>MEXICAN GREEN WAVE</h4>
+            <div class ="price-box">
+              <h1> Rs. 419 </h1>
+            </div>   
+            <p>
+              A pizza loaded with crunchy onions, crisp capsicum, juicy tomatoes and jalapeno
+              with a liberal sprinkling of exotic Mexican herbs.
+            </p>
+          </div>
+          <div class="tile">
+            <img
+              src="img/Farmhouse.jpg"/>
+            <h4>FARMHOUSE</h4>
+            <div class ="price-box">
+              <h1> Rs. 469 </h1>
+            </div>
+            <p>
+              A pizza loaded with crunchy, crisp capsicum,
+               succulent mushrooms and fresh tomatoes
+            </p>
+            </div>
+        
+          <div class="tile">
+            <img src="img/Paneer_Makhni.jpg">
+            <h4>PANEER MAKHANI</h4>
+            <div class ="price-box">
+              <h1> Rs. 559 </h1>
+            </div>
+            <p>
+              Spiced paneer, onion, juicy red bell peppers with our new
+              flavourful makhni sauce, topped with 100% mozzarella cheese 
+              and buttery spice sprinkle.
+            </p>
+          </div>
+
+          <div class="tile">
+            <img src="IMG/Veg_Extravaganz.jpg" />
+            <h4>VEG EXTRAVAGANZA  </h4>
+            <div class ="price-box">
+              <h1> Rs. 450 </h1>
+            </div>
+            <p>
+              A pizza loaded with golden corn, exotic black olives, crunchy onions, crisp capsicum, 
+              succulent mushrooms, juicyfresh tomatoes and jalapeno with extra cheese to go all around.
+            </p>
+          </div>
+
+          <div class="tile">
+            <img src="img/TandooriPaneer.jpg" alt="photo of Hazratbael apples" />
+            <h4>TANDOORI PANEER</h4>
+            <div class ="price-box">
+              <h1> Rs. 559 </h1>
+            </div>
+            <p>
+              Spiced Paneer, Crunchy Onions & Green Capsicum,spicy Red Paprika with delicious 
+              Tandoori Sauce and 100% mozzarella cheese.
+            </p>
+          </div>
+
+          <div class="tile">
+            <img src="img/Corn_&_Cheese.jpg"/>
+            <h4>CORN & CHEESE</h4>
+            <div class ="price-box">
+              <h1> Rs. 305 </h1>
+            </div>
+            <p>A combination of juicy Sweet Corn & 100% mozzarella cheese with flavourful signature pan sauce.
+            </p>
+          </div>
+        </div>
+      </section>
+    
+      <section id="contact">
+        <h1 class="section-heading">CONTACT</h1>
+        <h2>To know more feel free to reach us :</h2>
+        <div class="cf">
+          
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+      </div>
+      </section>
+
+    </main>
+    
+    <footer>
+      <p>&copy; 2023 Pizza Delivery. All rights reserved.</p>
+    </footer>
+  </body>
+  <script>
+  var menuItems=document.querySelectorAll(".nav-link");
+  menuItems.forEach(function(item)
+  {
+  item.addEventListener('mouseover',function(){
+  this.style.color= '#e23d3d';
+  this.style.borderBottom = '2px solid #e23d3d';
+  this.style.fontStyle = 'italic';
+  });
+  item.addEventListener('mouseout',function(){
+  this.style.color='#000';
+  this.style.borderBottom = '';
+  this.style.fontStyle = '';
+});
+
+})
+  </script>
+</html>
